@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'website/css/base.css' %}">
+
+<body>
+
+    <header class="jumbotron text-center">
+        <h1>Titulo</h1>
+        <p>Frederico</p>
+        <nav>
+            <a href="/home" class="btn btn-info"></a>
+            <a href="/home1" class="btn btn-info"></a>
+            <a href="/home2" class="btn btn-info"></a>
+        </nav>
+    </header>
+    <footer>
+        <p>Ola</p>
+    </footer>
+    <article class="container">
+        <main class="col-sm-6">
+            {% block main %}
+            {% endblock main %}
+        </main>
+        <aside class="col-sm-6">
+    {% load static %}
+    <img src="{% static 'website/images/imagem.png' %}">
+
+
+        </aside>
+    </article>
+    <footer>...</footer>
+</body>
